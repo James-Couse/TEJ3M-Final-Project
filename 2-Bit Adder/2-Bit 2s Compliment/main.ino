@@ -12,6 +12,7 @@ int Ap = 0;
 int Bp = 0;
 int An = 0;
 int Bn = 0;
+int Total = 0;
 
 void setup()
 {
@@ -72,14 +73,26 @@ void setup()
           else if (Bp == 11){
             Bn = -1;
           }
+
+          Total = An + Bn;
+
           Serial.print("A = " + String(twosA) + String(onesA) + "\n");
           Serial.print("B = " + String(twosB) + String(onesB) + "\n");
+
+          if (Total > 1) {
+            Serial.print("Overflow");
+          }
+          if (Total < -2) {
+            Serial.print("Underflow");
+          }
+          else {
           Serial.print(
           String(An) 
           + " + " 
           + String(Bn) 
           + " = " 
           + String(An + Bn) + "\n\n");
+          }
           delay(4000);
         }
       }
