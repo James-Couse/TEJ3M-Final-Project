@@ -63,7 +63,7 @@ void setup()
                   + String(onesB + (2 * twosB) + (4 * foursB) + (8 * eightsB)) 
                   + " = " 
                   + String((onesA + (2 * twosA) + (4 * foursA) + (8 * eightsA)) + (onesB + (2 * twosB) + (4 * foursB) + (8 * eightsB))) + "\n\n");
-                  delay(100);
+                  delay(2000);
                 }
               }
             }
