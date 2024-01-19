@@ -27,7 +27,8 @@ void setup()
   pinMode(DIGIT_B2, OUTPUT);
   pinMode(DIGIT_A3, OUTPUT);
   pinMode(DIGIT_B3, OUTPUT);
-  pinMode(ADD_SUB, OUTPUT);
+  
+  
 
   // set all pins to "0)
   digitalWrite(DIGIT_A1, 0); //LOW and HIGH just reference 0 & 1
