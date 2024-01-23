@@ -31,6 +31,7 @@ void setup()
   pinMode(DIGIT_B3, OUTPUT);
   pinMode(DIGIT_A4, OUTPUT);
   pinMode(DIGIT_B4, OUTPUT);
+  pinMode(ADD_SUB, OUTPUT);
   
   
   // set all pins to "0)
